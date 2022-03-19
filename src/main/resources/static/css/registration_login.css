@@ -1,21 +1,11 @@
 body {
+  background: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  background-size: cover;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(https://picsum.photos/3000/2000/?image=1015);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25%;
-  height: 100%;
-  background-color: #03a9f4;
-  opacity: 0.8;
 }
 
 .form {
@@ -25,14 +15,14 @@ body::before {
   transform: translate(-50%, -50%);
   width: 350px;
   min-height: 400px;
-  background-color: #fff;
+  background-color: #000000;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
   padding: 50px;
   box-sizing: border-box;
 }
 
 .form h2 {
-  color: #777;
+  color: #FFFFFF;
   margin: 0 0 40px;
   padding: 0;
 }
@@ -69,12 +59,19 @@ body::before {
 }
 
 .form .input-box input[type="submit"] {
-  border: none;
-  cursor: pointer;
-  background-color: #03a9f4;
-  color: #fff;
-  font-weight: bold;
-  transition: 0.5s;
+  background-color: #2b2b2b;
+  	font-family: 'Oswald', sans-serif;
+  	font-size: 1.25em;
+  	font-weight: 400;
+  	text-transform: uppercase;
+  	border: 2px solid #FFF;
+  	border-radius: 4px;
+  	padding: 12px 44px 12px 44px;
+  	margin: 20px auto;
+  	color: #FFF;
+  	-webkit-transition: color 0.5s, background-color 0.5s;
+  	transition: color 0.5s, background-color 0.5s;
+  	cursor: pointer;
 }
 
 .form .input-box input[type="submit"]:hover {

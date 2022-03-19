@@ -5,8 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table (name ="registration")
-public class UserModel {
-
+public class User {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -14,7 +13,7 @@ public class UserModel {
     private String password;
     private String email;
 
-    public UserModel() {}
+    public User() {}
 
     public Integer getId() {
         return id;
@@ -52,7 +51,7 @@ public class UserModel {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        UserModel userModel = (UserModel) o;
+        User userModel = (User) o;
         return Objects.equals(id, userModel.id) && Objects.equals(username, userModel.username) && Objects.equals(password, userModel.password) && Objects.equals(email, userModel.email);
     }
 
